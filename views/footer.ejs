@@ -1,0 +1,137 @@
+
+    <!-- Back to Top -->
+    <div class="dropdown">
+      
+   
+
+        <div class="dropdown btn btn-lg bg-dark btn-circle back-to-top btn-light">
+            <button class="btn btn-secondary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             <img src="/img/icon.png" width="30px" >
+            </button>
+            <div class="dropdown-menu" style=" height: 200px !important;" aria-labelledby="dropdownMenuButton">
+                <div class="box drop-item " style="padding-bottom:100px;">
+                    <div class="mid">
+                        <div class="chat">
+                            <p id="chatLog">Let's Chat</p>
+                        </div>
+                    </div>
+                </div>
+                        <div class="input drop-item">
+                        <input type="text" id="userBox" onkeydown="if(event.keyCode == 13){ talk() }"placeholder="Type A Message">
+                        </div>
+                
+            </div>
+          </div>
+        
+        
+    
+    </div>
+    
+   
+        
+            <script>
+        function talk(){
+            var know ={
+                "Hi":"Hello",
+                "How Are You?":"Great !",
+                "Bye":"Have A Nice Day !",
+                "Hello":"Hi , Whats Up",
+                "hi":"Hello",
+                "Hey":"Hello",
+                "hey":"Hello",
+                "how are you":"Great!",
+                "hello":"Hi, What's up",
+                "What is this?":"I'm a Chatbot helping you to navigate through this Tourism Website",
+                "Where can I go":"Uttarakhand is full of places where you can visit. You can Visit Mussoorie, Dehradun, Kedarnath, Badrinath,Gangotri, Nanital etc",
+                "Where can I go?":"Uttarakhand is full of places where you can visit. You can Visit Mussoorie, Dehradun, Kedarnath, Badrinath,Gangotri, Nanital etc",
+                "Where can I visit":"Uttarakhand is full of places where you can visit. You can Visit Mussoorie, Dehradun, Kedarnath, Badrinath,Gangotri, Nanital etc",
+                "Where can I visit?":"Uttarakhand is full of places where you can visit. You can Visit Mussoorie, Dehradun, Kedarnath, Badrinath,Gangotri, Nanital etc",
+                "What is special about Uttarakhand?":"You can look forward to lot of activites like Yoga, Trekking, Wildlife Safari, Rafting, Paragliding, Skiing, Camping etc",
+                "What is special about Uttarakhand":"You can look forward to lot of activites like Yoga, Trekking, Wildlife Safari, Rafting, Paragliding, Skiing, Camping etc",
+                "Things special about Uttarakhand":"You can look forward to lot of activites like Yoga, Trekking, Wildlife Safari, Rafting, Paragliding, Skiing, Camping etc",
+                "Things special about Uttarakhand?":"You can look forward to lot of activites like Yoga, Trekking, Wildlife Safari, Rafting, Paragliding, Skiing, Camping etc",
+                "Some spiritual places":"Some Spiritual places in Uttarakhand are Rishikesh, Haridwar, Kedarnath, Badrinath,Yamunotri, Gangotri,Uttarkashi, Rudra Prayag, Devprayag",
+                "Some spiritual places in Uttarakhand":"Some Spiritual places in Uttarakhand are Rishikesh, Haridwar, Kedarnath, Badrinath,Yamunotri, Gangotri,Uttarkashi, Rudra Prayag, Devprayag",
+                "Spiritual Places":"Some Spiritual places in Uttarakhand are Rishikesh, Haridwar, Kedarnath, Badrinath,Yamunotri, Gangotri,Uttarkashi, Rudra Prayag, Devprayag",
+                "Food":"Arsa, Gulgule, Baadi",
+                
+            };
+            var user = document.getElementById('userBox').value;
+            document.getElementById('chatLog').innerHTML = user + "<br>";
+            if(user in know){
+                document.getElementById('chatLog').innerHTML = know[user] + "<br>";
+            }else{
+                document.getElementById('chatLog').innerHTML = "I do not understand .";
+            }
+        }
+            </script>
+
+   
+
+    <!-- Footer Start -->
+<div class="container bg-dark text-white-50 py-5 px-sm-3 px-lg-5" >
+    <div class="row pt-5">
+        <div class="container">
+            <div class="row">
+              <div class="col">
+                <a href="" class="navbar-brand">
+                    <img src="img/logo-12.png" style="max-width:200px;" >
+                 </a>
+                <p>Pahadi travel is captivated to provide the idea of the best holiday packages the anency is also expertise in providing well customized packages according to the budget and needs of our customers.</p>
+                <h6 class="text-black text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us</h6>
+                    <div class="d-flex justify-content-start">
+                        <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+              </div>
+              <div class="col" class="col-lg-6 col-md-12 mb-5" style="text-align:right;">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Useful Links</h5>
+                <div class="d-flex flex-column justify-content-start" class="text-end">
+                    <a class="text-white-50 mb-2" href="index.ejs"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Services</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Packages</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Gallery</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Contac#
+                     
+                </div>
+              </div>
+            </div>
+           
+          </div>
+       
+<div class="container bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+    <div class="row">
+        <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+            <p class="m-0 text-white-50">Copyright &copy; </a>. All Rights Reserved Pahadi Travel</a>
+            </p>
+        </div>
+        <div class="col-lg-6 text-center text-md-right">
+            <p class="m-0 text-white-50">Designed by <a href="#"> Zero</a>
+            </p>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+
